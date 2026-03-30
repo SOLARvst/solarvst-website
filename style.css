@@ -394,7 +394,7 @@ ul { list-style: none; }
 
 .product-image--contain {
   object-fit: cover;
-  object-position: center 65%;
+  object-position: center 78%;
   transform: scale(1.05);
 }
 
