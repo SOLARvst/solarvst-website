@@ -393,8 +393,13 @@ ul { list-style: none; }
 }
 
 .product-image--contain {
-  object-fit: contain;
-  background: #0a0a0a;
+  object-fit: cover;
+  object-position: center 65%;
+  transform: scale(1.2);
+}
+
+.product-card:hover .product-image--contain {
+  transform: scale(1.23);
 }
 
 .product-image-overlay {
