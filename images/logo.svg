@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="400" height="450">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a43c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b08530;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="sunClip">
+      <rect x="0" y="0" width="400" height="185"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="450" fill="#2b2725"/>
+
+  <!-- Sun half circle - large, dominant -->
+  <circle cx="200" cy="185" r="60" fill="url(#goldGrad)" clip-path="url(#sunClip)"/>
+
+  <!-- Sun rays - rectangular bars, short and thick -->
+  <g transform="translate(200, 185)" fill="url(#goldGrad)">
+    <!-- 11 rays from -80 to +80 degrees, each 16deg apart -->
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(0)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(16)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(32)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(48)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(64)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(80)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(-16)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(-32)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(-48)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(-64)"/>
+    <rect x="-5.5" y="-118" width="11" height="48" rx="2" transform="rotate(-80)"/>
+  </g>
+
+  <!-- "solar" text - thin elegant sans-serif -->
+  <text x="200" y="300" text-anchor="middle" font-family="'Segoe UI Light', 'Helvetica Neue', Arial, sans-serif" font-size="80" font-weight="200" letter-spacing="8" fill="url(#goldGrad)">solar</text>
+
+  <!-- "VST" text -->
+  <text x="200" y="348" text-anchor="middle" font-family="'Segoe UI Light', 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="200" letter-spacing="12" fill="url(#goldGrad)">VST</text>
+</svg>

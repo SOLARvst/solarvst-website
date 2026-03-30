@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLAR VST, Boutique Audio Plugins</title>
+  <meta name="description" content="SOLAR VST crafts precision analog circuit emulations. Every plugin is a faithful recreation of vintage hardware from the 70s and 80s." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">
+      <img src="images/logo.svg" alt="SOLAR VST" class="nav-logo-img" />
+      <span class="nav-logo-text">SOLAR VST</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Boutique Audio Instruments</p>
+      <h1 class="hero-title">
+        <span class="hero-title-main">Circuit Perfect.</span>
+        <span class="hero-title-sub">Analog True.</span>
+      </h1>
+      <p class="hero-quote">"The machines of the past had soul because of their imperfections.<br />Our job is to preserve those imperfections."</p>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner reveal">
+        <div class="about-label">About SOLAR VST</div>
+        <h2 class="about-title"><em>Measured in circuits.</em></h2>
+        <div class="about-body">
+          <p>
+            SOLAR VST is a boutique plugin studio dedicated to one thing:
+            recreating the exact electronic behavior of vintage hardware from the
+            1970s and 1980s, with no shortcuts.
+          </p>
+          <p>
+            Every plugin begins with the original schematics. We trace the signal
+            path component by component, model the nonlinearities, the thermal
+            drift, the harmonic character, until the digital version is
+            indistinguishable from the real machine.
+          </p>
+          <p>
+            We ship when it's right, not when it's fast. Small team. High
+            standards. No compromises.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Circuit-Level Modeling</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">70s–80s</span>
+            <span class="stat-label">Hardware Era</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">VST3</span>
+            <span class="stat-label">Windows 10+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Instruments</div>
+        <h2 class="section-title">The Collection</h2>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- SOLAR 303 -->
+        <article class="product-card reveal">
+          <div class="product-image-wrap">
+            <img src="images/solar303-box.jpg" alt="SOLAR 303" class="product-image" />
+            <div class="product-image-overlay"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-label">Acid Synthesizer</div>
+            <h3 class="product-name">SOLAR 303</h3>
+            <p class="product-desc">
+              A meticulous transistor-level recreation of the Roland TB-303 Bass Line.
+              The filter, the accent, the slide, modeled from the original 1981 circuitry
+              to capture every characteristic of the machine that defined acid house.
+            </p>
+            <ul class="product-features">
+              <li>Sawtooth &amp; Square oscillators</li>
+              <li>16-step sequencer with MIDI export</li>
+              <li>Reverb · Delay · Distortion</li>
+              <li>Full MIDI CC Learn</li>
+              <li>4 visual skin themes</li>
+            </ul>
+            <a href="#" class="btn-gold product-btn" id="btn303">Get SOLAR 303</a>
+          </div>
+        </article>
+
+        <!-- SOLAR LADDER -->
+        <article class="product-card reveal reveal-delay-2">
+          <div class="product-image-wrap">
+            <img src="images/solar-ladder-box.jpg" alt="SOLAR LADDER" class="product-image product-image--contain" />
+            <div class="product-image-overlay"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-label">Filter Effect</div>
+            <h3 class="product-name">SOLAR LADDER</h3>
+            <p class="product-desc">
+              A faithful emulation of the Moog transistor ladder filter, one of the most
+              revered circuits in synthesis history. Four cascaded transistor stages modeled
+              with distributed nonlinearities for authentic warmth, resonance, and self-oscillation.
+            </p>
+            <ul class="product-features">
+              <li>Moog-style 4-pole &amp; 2-pole modes</li>
+              <li>HP / LP topology switching</li>
+              <li>Stereo &amp; Mono envelope follower</li>
+              <li>Drive with harmonic saturation</li>
+              <li>Full MIDI CC Learn</li>
+            </ul>
+            <a href="#" class="btn-gold product-btn" id="btnLadder">Get SOLAR LADDER</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="philosophy-inner reveal">
+        <div class="philosophy-quote">
+          <blockquote>
+            "The machines of the past had soul because of their imperfections.
+            Our job is to preserve those imperfections."
+          </blockquote>
+          <cite>SOLAR VST</cite>
+        </div>
+        <div class="philosophy-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">◈</div>
+            <h4>Schematic-Accurate</h4>
+            <p>We start from the original circuit diagrams and work forward, not backward from recordings.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">◈</div>
+            <h4>No Approximations</h4>
+            <p>Nonlinear components are modeled individually. Thermal and component tolerances are included.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">◈</div>
+            <h4>Details Matter</h4>
+            <p>Accent behavior, slide curves, filter self-oscillation, the subtle things that make it feel real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="SOLAR VST" class="footer-logo" />
+          <p class="footer-tagline">Boutique Circuit Emulations</p>
+        </div>
+        <div class="footer-links">
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#philosophy">Philosophy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SOLAR VST. All rights reserved.</span>
+        <span>SOLARVST.COM</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
