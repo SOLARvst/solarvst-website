@@ -15,6 +15,7 @@ document.getElementById('btnLadder').addEventListener('click', function(e) {
 });
 document.getElementById('btnDrive').addEventListener('click', function(e) {
   e.preventDefault();
+  window.open('https://solarvst.gumroad.com/l/SOLARDRIVE', '_blank');
 });
 document.getElementById('btnBass').addEventListener('click', function(e) {
   e.preventDefault();
