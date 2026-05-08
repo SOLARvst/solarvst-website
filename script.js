@@ -4,6 +4,23 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 });
 
+// ── Product buttons ──
+document.getElementById('btn303').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.open('https://solarvst.gumroad.com/l/solar303', '_blank');
+});
+document.getElementById('btnLadder').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.open('https://solarvst.gumroad.com/l/solarladderfilter', '_blank');
+});
+document.getElementById('btnDrive').addEventListener('click', function(e) {
+  e.preventDefault();
+});
+document.getElementById('btnBass').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.open('https://solarvst.gumroad.com/l/SOLARBASS', '_blank');
+});
+
 // ── Mobile nav toggle ──
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.querySelector('.nav-links');
@@ -27,18 +44,3 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => observer.observe(el));
 
-// ── Gumroad links (fill in when ready) ──
-const LINKS = {
-  solar303:   'https://solarvst.gumroad.com/l/solar303',
-  solarLadder: 'https://solarvst.gumroad.com/l/solarladderfilter',
-};
-
-document.getElementById('btn303').addEventListener('click', e => {
-  if (LINKS.solar303) { window.open(LINKS.solar303, '_blank'); }
-  else { e.preventDefault(); }
-});
-
-document.getElementById('btnLadder').addEventListener('click', e => {
-  if (LINKS.solarLadder) { window.open(LINKS.solarLadder, '_blank'); }
-  else { e.preventDefault(); }
-});
